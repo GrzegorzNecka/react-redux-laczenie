@@ -1,15 +1,12 @@
 import React from 'react';
-import { createStore } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import rootReducer from './reducers';
-import { movieActions } from './app/movies/duck';
-
-const store = createStore(rootReducer, composeWithDevTools());
-
-store.dispatch(movieActions.add('Rambo'));
+import MoviesContainer from './app/movies/components/MoviesContainer';
 
 const App = () => {
-  return <p>a</p>;
+  return (
+    <div className="App">
+      <MoviesContainer />
+    </div>
+  );
 };
 
 export default App;
