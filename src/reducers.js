@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import actorsReducer from './app/actors/duck/reducers';
-import movieReducer from './app/movies/duck/reducers';
+import actorsReducer from './app/actors/duck';
+import movieReducer from './app/movies/duck';
 
 const rootReucer = combineReducers({
   actors: actorsReducer,
